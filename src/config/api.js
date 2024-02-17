@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const API = axios.create({
-    baseURL: 'https://skripsi-airsense-backend.onrender.com/',
+    baseURL: 'https://skripsi-airsense-backend.onrender.com',
 });
 
 export const getAll = async () => {
