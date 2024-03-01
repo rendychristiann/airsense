@@ -39,7 +39,7 @@ const PM25Chart = ({ indexData }) => {
 
   return (
     <>
-      <div className="w-full px-4 md:w-1/2 lg:w-1/3 justify-center">
+      <div className="w-full max-w-3xl max-h-max justify-center">
         <div className="bg-primary rounded-2xl shadow-xl overflow-hidden mb-10">
           <div className="py-4">
             <h3
