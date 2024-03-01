@@ -1,6 +1,5 @@
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-// import Definition from "./components/Definition";
 import Feature from "./components/Feature";
 import Dashboard from "./components/Dashboard";
 import Author from "./components/Author";
