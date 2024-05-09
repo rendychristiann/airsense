@@ -15,7 +15,22 @@ const App = () => {
     try {
       setLoadingData(true);
       const data = await getAll();
-      setIndexData(data);
+      // setIndexData(data);
+      if (data.length === 0) {
+        setIndexData([
+          {
+            PM25: 0,
+            SNR: 0,
+            RSSI: 0,
+            timestamp: "",
+            dateValue: new Date(),
+          },
+        ]);
+        console.log(indexData);
+      } else {
+        setIndexData(data);
+        console.log(indexData);
+      }
     } catch (error) {
       console.error("Error fetching data: ", error);
     } finally {
